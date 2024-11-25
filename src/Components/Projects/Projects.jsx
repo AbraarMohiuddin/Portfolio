@@ -16,7 +16,7 @@ const Projects = () => {
       description:
         "An AI-powered career development platform that provides interactive quizzes using dynamic content. Built as part of Industry Project with Qeeri.AI, using React.js, ASP.NET Web API, Flask, and Azure. Features include AI-driven quiz questions, personalized feedback, and user authentication with ASP.NET Identity.",
       image: northstar,
-      github: "https://github.com/yourusername/northstar",
+      github: "/northstar",
       live: true,
     },
     {

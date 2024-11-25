@@ -1,4 +1,3 @@
-/* General Navbar Styling */
 .navbar {
   display: flex;
   align-items: center;
@@ -7,15 +6,17 @@
   padding: 0 20px;
   box-sizing: border-box;
   margin-top: 20px;
-  position: relative;
 }
 
-/* Logo Styling */
+.logo {
+  flex: 0 0 auto;
+  margin-left: 0;
+  text-decoration: none;
+}
 .logo {
   font-size: 1.71rem;
   font-weight: 600;
   color: var(--text-color);
-  text-decoration: none;
 }
 
 .logo span {
@@ -24,7 +25,6 @@
   color: crimson;
 }
 
-/* Navigation Menu */
 .navmenu {
   display: flex;
   align-items: center;
@@ -33,23 +33,8 @@
   font-size: 20px;
   flex: 1;
   justify-content: center;
-  transition: all 0.3s ease;
 }
 
-.navmenu a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s ease;
-}
-
-.navmenu a:hover {
-  background: linear-gradient(270deg, #df8908 50.41%, #b415ff 90.25%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Connect Button */
 .navconnect {
   flex: 0 0 auto;
   margin-right: 0;
@@ -62,55 +47,70 @@
 }
 
 .navconnect a {
-  text-decoration: none;
-  color: white;
+  text-decoration: none; /* Remove underlines */
+  color: white; /* Change link color */
+  transition: color 0.3s ease; /* Smooth color change on hover */
 }
-
 .navconnect:hover {
   transform: scale(1.05);
 }
 
-/* Hamburger Menu */
-.hamburger {
-  display: none; /* Hide by default */
-  flex-direction: column;
-  justify-content: space-around;
-  height: 25px;
-  cursor: pointer;
+.navmenu a {
+  text-decoration: none; /* Remove underlines */
+  color: white; /* Change link color */
+  transition: color 0.3s ease; /* Smooth color change on hover */
 }
 
-.hamburger .line {
-  width: 30px;
-  height: 3px;
-  background-color: white;
-  border-radius: 2px;
+.navmenu a:hover {
+  background: linear-gradient(270deg, #df8908 50.41%, #b415ff 90.25%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
+.navmobopen {
+  display: none;
+}
+.navmobclose {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    margin: 20px 50px;
+  }
+  .navconnect {
+    display: none;
+  }
+  .navmobopen {
+    display: block;
+    position: fixed;
+    right: 30px;
+  }
+  .navmobclose {
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 290px;
+    right: 30px;
+  }
   .navmenu {
-    position: absolute;
-    top: 60px;
-    left: 0;
+    position: fixed;
     flex-direction: column;
-    align-items: center;
-    background-color: #222;
-    width: 100%;
+    align-items: start;
+    top: 0;
+    gap: 30px;
+    background-color: #1f0016;
+    width: 350px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    right: -350px;
+  }
+  .navmenu li {
+    font-size: 30px;
+    padding-left: 100px;
+    flex-direction: row;
     gap: 20px;
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 100;
-  }
-
-  .navmenu.open {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .hamburger {
-    display: flex;
   }
 }

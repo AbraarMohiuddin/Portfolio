@@ -1,12 +1,18 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import "./Navbar.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import menu_open from "../../assets/menu_open.svg";
+import menu_close from "../../assets/menu_close.svg";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+  const openMenu = () => {
+    menuRef.current.style.right = "0"; // Open menu by sliding in
+  };
+
+  const closeMenu = () => {
+    menuRef.current.style.right = "-350px"; // Close menu by sliding out
   };
 
   return (
@@ -14,7 +20,19 @@ const Navbar = () => {
       <a href="#" className="logo">
         .Abraar <span>Mohiuddin</span>.
       </a>
-      <div className={`navmenu ${menuOpen ? "open" : ""}`}>
+      <img
+        src={menu_open}
+        onClick={openMenu}
+        className="navmobopen"
+        alt="Open Menu"
+      />
+      <ul className="navmenu" ref={menuRef}>
+        <img
+          src={menu_close}
+          onClick={closeMenu}
+          className="navmobclose"
+          alt="Close Menu"
+        />
         <li>
           <AnchorLink href="#home">Home</AnchorLink>
         </li>
@@ -30,14 +48,9 @@ const Navbar = () => {
         <li>
           <AnchorLink href="#contact">Contact</AnchorLink>
         </li>
-      </div>
+      </ul>
       <div className="navconnect">
         <AnchorLink href="#contact">Connect With Me</AnchorLink>
-      </div>
-      <div className="hamburger" onClick={toggleMenu}>
-        <span className="line"></span>
-        <span className="line"></span>
-        <span className="line"></span>
       </div>
     </nav>
   );
