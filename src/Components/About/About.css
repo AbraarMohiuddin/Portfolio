@@ -115,3 +115,28 @@ aboutright {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.view-link {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.view-link:hover {
+  color: #b415ff;
+}
+
+.arrow {
+  margin-left: 5px;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.view-link:hover .arrow {
+  transform: translateX(5px);
+}

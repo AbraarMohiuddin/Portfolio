@@ -5,7 +5,7 @@ import profile_img from "../../assets/main.jpg";
 
 const About = () => {
   return (
-    <div className="about">
+    <div id="about" className="about">
       <div className="abouttitle">
         <h1>About Me</h1>
         <img src={themepattern} />
@@ -45,15 +45,25 @@ const About = () => {
               <h1 className="starhead">Star Achievement</h1>
               <p>
                 Awarded a Certificate of Achievement and a Scholarship by the
-                <b> Victorian Government </b>for earning a position in the
-                highly competitive SummerTech Live Program, after being selected
-                as one of the 60 students across all Victorian Universities.
+                <b> Victorian Chamber of Commerce </b>for earning a position in
+                the highly competitive SummerTech Live Program, after being
+                selected as one of the 60 students across all Victorian
+                Universities.
               </p>
               <p>
                 {" "}
                 Secured an internship at SpendAble through this prestigious
                 program.
               </p>
+              <a
+                href="/certificate.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="view-link"
+              >
+                <b>View </b>
+                <span className="arrow">→</span>
+              </a>{" "}
             </div>
             <br></br>
           </div>

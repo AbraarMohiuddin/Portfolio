@@ -1,22 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
-import logo from "../../assets/logo.svg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <div className="navbar">
-      <a href="#" class="logo">
-        .Abraar <span> Mohiuddin</span>.
+    <nav className="navbar">
+      <a href="#" className="logo">
+        .Abraar <span>Mohiuddin</span>.
       </a>
-      <ul className="navmenu">
-        <li>Home</li>
-        <li>About Me</li>
-        <li>Work Experience</li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
-      <div className="navconnect">Connect With Me</div>
-    </div>
+      <div className={`navmenu ${menuOpen ? "open" : ""}`}>
+        <li>
+          <AnchorLink href="#home">Home</AnchorLink>
+        </li>
+        <li>
+          <AnchorLink href="#about">About Me</AnchorLink>
+        </li>
+        <li>
+          <AnchorLink href="#experience">Work Experience</AnchorLink>
+        </li>
+        <li>
+          <AnchorLink href="#projects">Projects</AnchorLink>
+        </li>
+        <li>
+          <AnchorLink href="#contact">Contact</AnchorLink>
+        </li>
+      </div>
+      <div className="navconnect">
+        <AnchorLink href="#contact">Connect With Me</AnchorLink>
+      </div>
+      <div className="hamburger" onClick={toggleMenu}>
+        <span className="line"></span>
+        <span className="line"></span>
+        <span className="line"></span>
+      </div>
+    </nav>
   );
 };
 

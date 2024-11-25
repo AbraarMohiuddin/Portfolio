@@ -135,6 +135,46 @@
   justify-content: space-around;
 }
 
+/* Live Indicator Container */
+.live-indicator {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 10;
+}
+
+/* Green Circle with Ripple Effect */
+.ripple {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background-color: #00ff00;
+  border-radius: 50%;
+  animation: ripple 1.5s infinite;
+}
+
+/* Ripple Animation */
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+/* Live Text */
+.live-indicator span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #00ff00;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 900px) {
   .projects-grid {
@@ -160,4 +200,34 @@
   .project-image img {
     height: 200px; /* Smaller images for smaller screens */
   }
+}
+
+/* Project Card */
+.project-card {
+  position: relative; /* Add this to create the positioning context */
+  background-color: #222222;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 370px; /* Wider cards */
+  height: 530px; /* Taller cards */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Live Indicator Container */
+.live-indicator {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 10;
 }

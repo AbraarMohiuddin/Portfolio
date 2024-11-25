@@ -32,13 +32,12 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div div id="contact" className="contact">
       <div className="contact-title">
         <h1>Get in Touch</h1>
         <img src={themepattern} alt="Theme pattern" />
       </div>
       <div className="contact-sections">
-        {/* Left Section */}
         <div className="contact-left">
           <h1>Let's talk</h1>
           <p>
@@ -60,15 +59,14 @@ const Contact = () => {
           </p>
         </div>
 
-        {/* Right Section - Form */}
         <form className="contact-right" onSubmit={onSubmit}>
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea
             name="message"
             placeholder="Write your message here..."
-            rows="12" // Increase rows for vertical size
-            cols="50" // Adjust columns for horizontal size
+            rows="12"
+            cols="50"
             required
           ></textarea>
           <div className="button">

@@ -4,14 +4,12 @@ import themepattern from "../../assets/theme_pattern.svg";
 
 const WorkExperience = () => {
   return (
-    <div className="work-experience">
-      {/* Page Title */}
+    <div div id="experience" className="work-experience">
       <div className="work-title">
         <h1>Work Experience</h1>
         <img src={themepattern} alt="Theme pattern" />
       </div>
 
-      {/* Work Experience Section */}
       <div className="work-content">
         <div className="experience">
           <h3>Software Developer Intern</h3>
@@ -34,6 +32,10 @@ const WorkExperience = () => {
               Implemented Redux for state management and modularized styling
               with SCSS, resulting in a 25% improvement in application
               performance and maintainability.
+            </li>
+            <li>
+              Integrated APIs for real-time transaction monitoring and
+              analytics, improving user insights and operational efficiency.
             </li>
             <li>
               Redesigned the front-end architecture making it completely
