@@ -1,0 +1,163 @@
+/* General Projects Section */
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.projects-title {
+  position: relative;
+  text-align: center;
+}
+
+.projects-title h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.projects-title img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/* Projects Grid */
+.projects-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 35px; /* Space between cards */
+  justify-items: center;
+  padding: 0 20px;
+}
+
+/* Project Card */
+.project-card {
+  background-color: #222222;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 370px; /* Wider cards */
+  height: 530px; /* Taller cards */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Project Image */
+.project-image img {
+  width: max-content;
+  height: 250px; /* Adjust height for larger image */
+  object-fit: cover;
+  align-items: center;
+  display: flex;
+}
+
+/* Project Title */
+.project-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px 0 10px;
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Project Description */
+.project-description {
+  font-size: 16px;
+  color: #d3d3d3;
+  padding: 0 15px 20px;
+  line-height: 1.5;
+}
+
+/* View Button Styling */
+.project-card button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(180, 21, 255, 0.5);
+}
+
+.project-card button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 5px rgba(180, 21, 255, 0.3);
+}
+
+/* View Button Styling */
+.project-card .view-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card .view-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(180, 21, 255, 0.5);
+}
+
+.project-card .view-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 5px rgba(180, 21, 255, 0.3);
+}
+
+.projectbuttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+
+  .project-card {
+    max-width: 300px; /* Slightly smaller cards for medium screens */
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+
+  .project-card {
+    max-width: 100%; /* Full-width cards for small screens */
+    height: auto; /* Let the height adjust naturally */
+  }
+
+  .project-image img {
+    height: 200px; /* Smaller images for smaller screens */
+  }
+}
