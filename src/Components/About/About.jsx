@@ -17,10 +17,16 @@ const About = () => {
         <div className="aboutright">
           <div className="right1">
             <p>
-              I am an experienced Frontend Developer with over a decade of
-              professional expertise in the field. Throughout my career, I have
-              had the privilege of collaborating with prestigious organizations,
-              contributing to their success and growth.
+              I learnt to code at a very young age, and have since been in love
+              with it. My passion for programming has led me to develop skills
+              in languages such as C++, C#, Python, SQL, HTML, CSS, JavaScript
+              as well as frameworks like ReactJS, Vue, NodeJS and ASP.NET.
+            </p>
+            <br></br>
+            <p>
+              My passion for development is not only reflected in my work
+              experience but also in the enthusiasm and dedication I bring to
+              each project.
             </p>
             <br></br>
             <div className="education">

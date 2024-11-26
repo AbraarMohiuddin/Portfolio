@@ -11,7 +11,12 @@ const Hero = () => {
         <span className="herospan">I'm Abraar Mohiuddin,</span> a full-stack
         developer based in Australia.
       </h1>
-      <p>I am a developer developer developer developer developer developer </p>
+      <p>
+        Enthusiastic Bachelor of Computer Science graduate with a passion for
+        problem-solving through code. Experienced in a range of programming
+        languages and eager to leverage my technical skills to innovate and
+        contribute to cutting-edge technology.{" "}
+      </p>
       <div className="heroaction">
         <AnchorLink href="#contact" className="heroconnect">
           Connect With Me
