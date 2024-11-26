@@ -101,8 +101,8 @@ const About = () => {
       </div>
       <div className="achievements">
         <div className="achievement">
-          <h1>1</h1>
-          <p>YEAR OF EXPERIENCE</p>
+          <h1>1+</h1>
+          <p>YEARS OF EXPERIENCE</p>
         </div>
         <hr />
         <div className="achievement">
@@ -112,7 +112,7 @@ const About = () => {
         <hr />
         <div className="achievement">
           <h1>3</h1>
-          <p>INDUSTRY PROJECTS COMPLETED</p>
+          <p>INDUSTRY EXPERIENCES COMPLETED</p>
         </div>
       </div>
     </div>
