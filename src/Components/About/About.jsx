@@ -11,9 +11,6 @@ const About = () => {
         <img src={themepattern} />
       </div>
       <div className="aboutsections">
-        <div className="aboutleft">
-          <img src={profile_img} className="profileimg" />
-        </div>
         <div className="aboutright">
           <div className="right1">
             <p>
@@ -24,7 +21,9 @@ const About = () => {
             </p>
             <br></br>
             <p>
-              My passion for development is not only reflected in my work
+              I am very quick learner and throughout my work experiences, I've
+              learnt to work with and adapt to new technologies rapidly. My
+              passion for development is not only reflected in my work
               experience but also in the enthusiasm and dedication I bring to
               each project.
             </p>
@@ -67,7 +66,7 @@ const About = () => {
                 rel="noopener noreferrer"
                 className="view-link"
               >
-                <b>View </b>
+                <div className="starhead">View </div>
                 <span className="arrow">→</span>
               </a>{" "}
             </div>

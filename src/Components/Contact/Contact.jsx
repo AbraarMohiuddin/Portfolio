@@ -32,7 +32,7 @@ const Contact = () => {
   };
 
   return (
-    <div div id="contact" className="contact">
+    <div id="contact" className="contact">
       <div className="contact-title">
         <h1>Get in Touch</h1>
         <img src={themepattern} alt="Theme pattern" />
@@ -46,16 +46,16 @@ const Contact = () => {
             can contact me anytime.
           </p>
           <p>
-            <img src={mail_icon} alt="Mail icon" className="icon" />{" "}
-            abraarmohiuddin3@gmail.com
-          </p>
-          <p>
             <img src={call_icon} alt="Call icon" className="icon" /> +61
             402318782
           </p>
           <p>
             <img src={location_icon} alt="Location icon" className="icon" />{" "}
             Melbourne, Australia
+          </p>
+          <p>
+            <img src={mail_icon} alt="Mail icon" className="icon" />{" "}
+            abraarmohiuddin3@gmail.com
           </p>
         </div>
 

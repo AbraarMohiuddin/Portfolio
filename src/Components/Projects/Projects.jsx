@@ -26,8 +26,6 @@ const Projects = () => {
         "A simple CRUD application for managing bookstore records. Built with ASP.NET Core, Bootstrap, and Azure SQL Database. Implements MVC architecture, routing, and CI/CD pipeline using GitHub Workflows, Docker for testing, and Azure Containers for deployment.",
       image: bookhub,
       github: "https://github.com/AbraarMohiuddin/BookWeb",
-      code: "https://bookstore20241010200200.azurewebsites.net",
-      live: true,
     },
     {
       id: 3,
