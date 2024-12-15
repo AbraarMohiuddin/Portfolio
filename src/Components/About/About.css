@@ -109,6 +109,13 @@ aboutright {
   gap: 60px;
   align-items: center;
 }
+
+.gpa {
+  background: linear-gradient(270deg, #df8908 50.41%, #b415ff 90.25%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .star h1 {
   background: linear-gradient(270deg, #df8908 50.41%, #b415ff 90.25%);
   background-clip: text;

@@ -39,7 +39,9 @@ const About = () => {
                 </h3>
               </div>
               <br></br>
-              <h3>GPA 3.7 | WAM: 83</h3>
+              <div className="gpa">
+                <h3>GPA 3.63 | WAM: 83</h3>
+              </div>
               <p>
                 Received a Letter of Commendation for being one of the top
                 students in the course.{" "}

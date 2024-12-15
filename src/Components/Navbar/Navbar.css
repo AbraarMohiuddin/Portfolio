@@ -76,9 +76,6 @@
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    margin: 20px 50px;
-  }
   .navconnect {
     display: none;
   }
