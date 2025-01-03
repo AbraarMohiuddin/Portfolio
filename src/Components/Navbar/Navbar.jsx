@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <a href="#" className="logo">
-        .Abraar <span>Mohiuddin</span>.
+        .Abraar <span>Mohiuddin</span>
       </a>
       <img
         src={menu_open}
