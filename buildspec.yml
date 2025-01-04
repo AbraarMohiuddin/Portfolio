@@ -11,6 +11,8 @@ phases:
   post_build:
     commands:
       - aws s3 sync dist s3://my-portfolio-bucket-006 --delete
+      - aws cloudfront create-invalidation --distribution-id EAFCE577W5PPD --paths "/*"
+
 artifacts:
   files:
     - "**/*"
