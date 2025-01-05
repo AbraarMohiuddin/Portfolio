@@ -175,7 +175,7 @@
   }
 
   .project-image img {
-    height: 200px;
+    height: auto;
     width: 100%;
     object-fit: contain;
   }
@@ -192,7 +192,7 @@
   }
 
   .project-image img {
-    height: 200px;
+    height: auto;
     width: 100%;
     object-fit: contain;
   }
