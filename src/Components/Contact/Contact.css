@@ -115,7 +115,6 @@
 @media screen and (max-width: 900px) {
   .contact {
     padding: 0px;
-    width: 600px;
   }
   .contact-sections {
     flex-direction: column;
