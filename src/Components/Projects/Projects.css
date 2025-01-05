@@ -52,11 +52,11 @@
 }
 
 .project-image img {
-  width: max-content;
-  height: 250px;
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
   object-fit: cover;
-  align-items: center;
-  display: flex;
+  border-radius: 8px;
 }
 
 .project-title {
@@ -187,6 +187,11 @@
 
   .project-image img {
     height: 200px;
+  }
+  .project-image img {
+    height: auto; /* Allow the height to adjust dynamically */
+    width: 100%; /* Ensure the image fills the container width */
+    object-fit: contain; /* Adjust this if you want the entire image to be visible */
   }
 }
 

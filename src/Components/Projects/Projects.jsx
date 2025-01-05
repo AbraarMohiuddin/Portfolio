@@ -21,11 +21,12 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "BookHub",
+      title: "Portfolio",
       description:
-        "A simple CRUD application for managing bookstore records. Built with ASP.NET Core, Bootstrap, and Azure SQL Database. Implements MVC architecture, routing, and CI/CD pipeline using GitHub Workflows, Docker for testing, and Azure Containers for deployment.",
-      image: bookhub,
-      github: "https://github.com/AbraarMohiuddin/BookWeb",
+        "A dynamic portfolio built with React.js, showcasing projects, resume, and experiences. Features include responsive design, smooth scrolling, and a Web3Forms contact form. Hosted on AWS (S3, CloudFront), with a CI/CD pipeline using CodePipeline and CodeBuild, ensuring automated deployment from GitHub.",
+      image: portfolio,
+      github: "https://github.com/AbraarMohiuddin/Portfolio",
+      live: true,
     },
     {
       id: 3,
@@ -45,12 +46,11 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: "Portfolio",
+      title: "BookHub",
       description:
-        "A dynamic portfolio built with React.js and CSS, showcasing my projects, resume, and experiences. Utlizes external libraries like MUI and features advanced styling. It also features advanced functionality like smooth scrolling, responsive design, Web3Forms for contact form, and a great user experience.",
-      image: portfolio,
-      github: "https://github.com/AbraarMohiuddin/Portfolio",
-      live: true,
+        "A simple CRUD application for managing bookstore records. Built with ASP.NET Core, Bootstrap, and Azure SQL Database. Implements MVC architecture, routing, and CI/CD pipeline using GitHub Workflows, Docker for testing, and Azure Containers for deployment.",
+      image: bookhub,
+      github: "https://github.com/AbraarMohiuddin/BookWeb",
     },
     {
       id: 6,

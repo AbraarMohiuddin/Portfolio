@@ -8,17 +8,17 @@ const Navbar = () => {
   const menuRef = useRef(null);
 
   const openMenu = () => {
-    menuRef.current.style.right = "0"; // Open menu by sliding in
+    menuRef.current.style.right = "0";
   };
 
   const closeMenu = () => {
-    menuRef.current.style.right = "-350px"; // Close menu by sliding out
+    menuRef.current.style.right = "-350px";
   };
 
   return (
     <nav className="navbar">
       <a href="#" className="logo">
-        .Abraar <span>Mohiuddin</span>
+        .Abraar <span>Mohiuddin</span>.
       </a>
       <img
         src={menu_open}

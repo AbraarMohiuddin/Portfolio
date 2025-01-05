@@ -84,6 +84,10 @@ const About = () => {
               <hr style={{ width: "50%" }} />
             </div>
             <div className="skill">
+              <p>Python</p>
+              <hr style={{ width: "50%" }} />
+            </div>
+            <div className="skill">
               <p>JavaScript</p>
               <hr style={{ width: "50%" }} />
             </div>
