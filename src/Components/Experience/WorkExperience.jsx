@@ -16,12 +16,34 @@ const WorkExperience = () => {
           <p>
             <strong>Spendable Inc.</strong> | Dec 2023 – Current
           </p>
+          <p
+            style={{
+              textAlign: "center",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              margin: "10px 0",
+              backgroundColor: "white",
+              color: "black",
+            }}
+          >
+            <strong>
+              Skills Acquired: React.js | TypeScript | AWS | Redux | SCSS |
+              RESTful APIs | API Integration | Responsive Design | Accessibility
+              Standards (WCAG) | Performance Optimization
+            </strong>
+          </p>
           <ul>
             <li>
               Developed and optimized key features for{" "}
               <b>the world’s first debit card </b>web app for the
               specially-abled, using React.js with TypeScript, ensuring
               cross-device compatibility and a smooth user experience.
+            </li>
+            <li>
+              Designed and implemented AWS Lambda functions to handle serverless
+              backend operations, including automated transaction processing and
+              user data validation, improving scalability and reducing latency.
             </li>
             <li>
               Re-engineered the user onboarding process with RESTful APIs by
@@ -49,6 +71,23 @@ const WorkExperience = () => {
           <h3>Student Developer</h3>
           <p>
             <strong>Qeeri.AI</strong> | Feb 2024 – November 2024
+          </p>
+          <p
+            style={{
+              textAlign: "center",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              margin: "10px 0",
+              backgroundColor: "white",
+              color: "black",
+            }}
+          >
+            <strong>
+              Skills Acquired: ASP.NET | ReactJS | Tailwind CSS | RESTful APIs |
+              Azure SQL | Azure CI/CD | GitHub Workflows | Full-Stack
+              Development | Cloud Deployment
+            </strong>
           </p>
           <ul>
             <li>
@@ -90,6 +129,24 @@ const WorkExperience = () => {
           <h3>Student Developer</h3>
           <p>
             <strong>Aquis Atlantis Enterprises</strong> | Feb 2023 – May 2023
+          </p>
+          <p
+            style={{
+              textAlign: "center",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              margin: "10px 0",
+              backgroundColor: "white",
+              color: "black",
+            }}
+          >
+            <strong>
+              Skills Acquired: React.js | Figma | UI/UX Design | MySQL |
+              Database Architecture | Jest | React Testing Library | Redux |
+              Responsive Design | State Management | Unit Testing | Front-End
+              Development
+            </strong>
           </p>
           <ul>
             <li>

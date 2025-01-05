@@ -173,6 +173,12 @@
     max-width: 300px;
     height: max-content;
   }
+
+  .project-image img {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -187,11 +193,8 @@
 
   .project-image img {
     height: 200px;
-  }
-  .project-image img {
-    height: auto; /* Allow the height to adjust dynamically */
-    width: 100%; /* Ensure the image fills the container width */
-    object-fit: contain; /* Adjust this if you want the entire image to be visible */
+    width: 100%;
+    object-fit: contain;
   }
 }
 
